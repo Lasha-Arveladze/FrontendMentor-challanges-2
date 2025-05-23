@@ -42,7 +42,7 @@ const showErrors = function (input, message) {
 
 // Check if the values are empty
 const isEmpty = function (...inputs) {
-  return inputs.some((input) => input.value.trim() === "");
+  return inputs.some((input, i) => input.value.trim() === "");
 };
 
 // Check for valid date
@@ -97,12 +97,20 @@ form.addEventListener("submit", function (e) {
   // Form Validation
 
   // If fields are empty
-  if (isEmpty(dayInput, monthInput, yearInput)) {
-    showErrors(errorMessage, "This field is required");
+  if (isEmpty(dayInput)) {
+    showErrors([errorMessage[0]], "This field is required");
   }
 
-  // Date/month/year number validation
+  if (isEmpty(monthInput)) {
+    showErrors([errorMessage[1]], "This field is required");
+  }
+
+  if (isEmpty(yearInput)) {
+    showErrors([errorMessage[2]], "This field is required");
+  }
+
   if ((+dayInput.value < 1 || +dayInput.value > 31) && !isEmpty(dayInput)) {
+    // Date/month/year number validation
     // Here I give showErrors function input in array to use forEach function on it
     showErrors([errorMessage[0]], "Must be a valid day");
   }
@@ -125,12 +133,20 @@ form.addEventListener("submit", function (e) {
     !isValidDate(+dayInput.value, +monthInput.value, +yearInput.value) &&
     !(+dayInput.value < 1 || +dayInput.value > 31) &&
     !(+monthInput.value < 1 || +monthInput.value > 12) &&
-    !(+yearInput.value > year)
+    !(+yearInput.value > year) &&
+    !isEmpty(dayInput, yearInput, monthInput)
   ) {
     showErrors([errorMessage[0]], "Must be a valid date");
   }
 
-  if (isValidDate(+dayInput.value, +monthInput.value, +yearInput.value)) {
+  if (+yearInput.value < 1900 && yearInput.value !== "") {
+    showErrors([errorMessage[2]], "Year must be 1900 or later");
+  }
+
+  if (
+    isValidDate(+dayInput.value, +monthInput.value, +yearInput.value) &&
+    +yearInput.value >= 1900
+  ) {
     displayAge();
   }
 });

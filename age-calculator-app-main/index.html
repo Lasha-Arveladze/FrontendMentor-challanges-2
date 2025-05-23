@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=10" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor | Age calculator app</title>
     <script defer src="script.js"></script>
@@ -11,7 +11,9 @@
     <form class="form--box">
       <header class="form--header">
         <div class="form--group">
-          <label class="form--label text-preset-6" for="day">DAY</label>
+          <label class="form--label text-preset-6" name="day" for="day"
+            >DAY</label
+          >
           <input
             class="form--input text-preset-4"
             type="text"
@@ -26,6 +28,7 @@
         <div class="form--group">
           <label class="form--label text-preset-6" for="month">MONTH</label>
           <input
+            name="month"
             class="form--input text-preset-4"
             type="text"
             placeholder="MM"
@@ -39,6 +42,7 @@
         <div class="form--group">
           <label class="form--label text-preset-6" for="year">YEAR</label>
           <input
+            name="year"
             class="form--input text-preset-4"
             type="text"
             placeholder="YYYY"
