@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=10" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Age calculator app</title>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <form class="form--box">
+      <header class="form--header">
+        <div class="form--group">
+          <label class="form--label text-preset-6" for="day">DAY</label>
+          <input
+            class="form--input text-preset-4"
+            type="text"
+            placeholder="DD"
+            id="day"
+          />
+          <span
+            class="error-message--color hidden error-message text-preset-6-italic"
+          ></span>
+        </div>
+
+        <div class="form--group">
+          <label class="form--label text-preset-6" for="month">MONTH</label>
+          <input
+            class="form--input text-preset-4"
+            type="text"
+            placeholder="MM"
+            id="month"
+          />
+          <span
+            class="error-message--color hidden error-message text-preset-6-italic"
+          ></span>
+        </div>
+
+        <div class="form--group">
+          <label class="form--label text-preset-6" for="year">YEAR</label>
+          <input
+            class="form--input text-preset-4"
+            type="text"
+            placeholder="YYYY"
+            id="year"
+          />
+          <span
+            class="hidden error-message error-message--color text-preset-6-italic"
+          ></span>
+        </div>
+      </header>
+      <div class="divider--container">
+        <div class="divider"></div>
+        <button class="form--btn" type="submit">
+          <img
+            class="divider--img"
+            src="assets/images/icon-arrow.svg"
+            alt="arrow-icon"
+          />
+        </button>
+      </div>
+
+      <div class="calculate--container">
+        <p class="calculate-text text-preset-2">
+          <span class="calculated--numbers calculated--numbers-years">--</span
+          >years
+        </p>
+        <p class="calculate-text text-preset-2">
+          <span class="calculated--numbers calculated--numbers-months">--</span
+          >months
+        </p>
+        <p class="calculate-text text-preset-2">
+          <span class="calculated--numbers calculated--numbers-days">--</span
+          >days
+        </p>
+      </div>
+    </form>
+  </body>
+</html>

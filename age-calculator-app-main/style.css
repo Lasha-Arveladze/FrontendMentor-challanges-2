@@ -1,0 +1,254 @@
+/* Adding font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  /* Primary Colors */
+  --primary-color-purple-500: hsl(259, 100%, 65%);
+  --primary-color-red-400: hsl(0, 100%, 67%);
+
+  /* Neutral Colors */
+  --neutral-color-white: hsl(0, 100%, 100%);
+  --neutral-color-grey-100: hsl(0, 0%, 94%);
+  --neutral-color-grey-200: hsl(0, 0%, 86%);
+  --neutral-color-grey-500: hsl(0, 1%, 44%);
+  --neutral-color-black: hsl(0, 0%, 0%);
+
+  /* Spacing */
+  --spacing-100: 0.8rem;
+  --spacing-200: 1.6rem;
+  --spacing-300: 2.4rem;
+  --spacing-400: 3.2rem;
+  --spacing-600: 4.8rem;
+  --spacing-700: 5.6rem;
+
+  /* Font */
+  --main-font: "Poppins", sans-serif;
+}
+
+/* Support Classes */
+
+.text-preset-1 {
+  font-size: 10.4rem;
+  line-height: 110%;
+  letter-spacing: -0.2px;
+}
+
+.text-preset-2 {
+  font-size: 5.6rem;
+  line-height: 110%;
+  letter-spacing: -0.2rem;
+}
+
+.text-preset-3 {
+  font-size: 3.2rem;
+  line-height: 150%;
+  letter-spacing: 0;
+}
+
+.text-preset-4 {
+  font-size: 2rem;
+  line-height: 150%;
+  letter-spacing: 0;
+}
+
+.text-preset-5 {
+  font-size: 1.4rem;
+  line-height: 150%;
+  letter-spacing: 0.5rem;
+}
+
+.text-preset-5-italic {
+  font-size: 1.4rem;
+  line-height: 150%;
+  letter-spacing: 0;
+}
+
+.text-preset-6 {
+  font-size: 1.2rem;
+  line-height: 150%;
+  letter-spacing: 0.4rem;
+  font-weight: bold;
+}
+
+.text-preset-6-italic {
+  font-size: 1.2rem;
+  line-height: 150%;
+  letter-spacing: 0;
+  font-style: italic;
+}
+
+/* Styling the page */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--neutral-color-grey-100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--main-font);
+}
+
+.form--box {
+  max-width: 34.3rem;
+  background-color: var(--neutral-color-white);
+  padding: var(--spacing-600) var(--spacing-300);
+  border-radius: 2.4rem 2.4rem 10rem 2.4rem;
+}
+
+.form--header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: var(--spacing-200);
+  margin-bottom: var(--spacing-400);
+}
+
+.form--group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form--label {
+  color: var(--neutral-color-grey-500);
+  margin-bottom: var(--spacing-200);
+}
+
+.form--input {
+  width: 100%;
+  height: 4.6rem;
+  padding-inline: var(--spacing-200);
+  border: 1px solid var(--neutral-color-grey-200);
+  color: var(--neutral-color-black);
+  font-weight: bold;
+  box-shadow: none;
+  outline: none;
+  border-radius: var(--spacing-100);
+  caret-color: var(--primary-color-purple-500);
+  margin-bottom: var(--spacing-100);
+}
+
+/* Styling divider */
+
+.divider--container {
+  position: relative;
+  padding: var(--spacing-400) 0;
+
+  margin-bottom: var(--spacing-400);
+}
+
+.divider {
+  border: 1px solid var(--neutral-color-grey-200);
+}
+
+.form--btn {
+  all: unset;
+}
+
+.divider--img {
+  width: 6.4rem;
+  height: 6.4rem;
+  padding: 2rem;
+  background-color: var(--primary-color-purple-500);
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.3s all;
+  cursor: pointer;
+}
+
+/* Styling calculations */
+.calculate-text {
+  color: var(--neutral-color-black);
+  font-weight: bold;
+  font-style: italic;
+}
+.calculated--numbers {
+  color: var(--primary-color-purple-500);
+  margin-right: var(--spacing-100);
+}
+
+/* Hover state */
+
+.divider--img:hover {
+  background-color: var(--neutral-color-black);
+}
+
+/* Error handling */
+.error-message--color {
+  color: var(--primary-color-red-400);
+}
+
+.error-message-border-color {
+  border-color: var(--primary-color-red-400);
+}
+
+.hidden {
+  display: none;
+}
+
+/* Media Queris */
+
+/* For Tablet: 768px */
+@media (min-width: 48rem) {
+  .form--box {
+    max-width: 68.6rem;
+    border-radius: 2.4rem 2.4rem 20rem 2.4rem;
+    padding: var(--spacing-700);
+  }
+
+  .form--header {
+    column-gap: var(--spacing-400);
+  }
+
+  .form--label {
+    font-size: 1.4rem;
+    line-height: 150%;
+    letter-spacing: 0.5rem;
+    font-weight: bold;
+  }
+
+  .form--input {
+    width: 17rem;
+    height: 6.4rem;
+  }
+
+  .calculate-text {
+    font-size: 10.4rem;
+    line-height: 110%;
+    letter-spacing: -0.2px;
+  }
+}
+
+/* For Desktop: 1440px */
+@media (min-width: 90rem) {
+  .form--box {
+    max-width: 84rem;
+  }
+
+  .form--header {
+    margin-bottom: 0;
+    justify-items: start;
+    width: 72.8rem;
+    grid-template-columns: repeat(3, max-content);
+  }
+  .form--input {
+    width: 16rem;
+  }
+  .divider--img {
+    width: 9.6rem;
+    height: 9.6rem;
+    left: 90%;
+    transform: translateY(-20%);
+  }
+}
