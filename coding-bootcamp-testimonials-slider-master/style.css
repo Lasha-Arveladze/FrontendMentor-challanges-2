@@ -1,0 +1,115 @@
+:root {
+  /* Colors */
+  --color-white: hsl(0, 100%, 100%);
+  --color-black: hsl(0, 0%, 0%);
+  --color-gray-400: hsl(240, 18%, 77%);
+  --color-gray-100: hsl(0, 0%, 92%);
+  --color-gray-50: hsl(240, 57%, 97%);
+  --color-purple: hsl(302, 51%, 62%);
+  --color-pink: hsl(329, 56%, 61%);
+  --color-blue: hsl(240, 38%, 20%);
+
+  /* Gradint */
+  --color-gradient: linear-gradient(hsl(264, 49%, 64%), hsl(244, 68%, 55%));
+
+  /* Spacing */
+  --spacing-100: 0.8rem;
+  --spacing-200: 1.6rem;
+  --spacing-300: 2.4rem;
+  --spacing-400: 3.2rem;
+  --spacing-600: 4.8rem;
+  --spacing-1200: 9.6rem;
+}
+
+/* Helper classes for typography */
+
+.text-preset-1 {
+  font-size: 1.8rem;
+  line-height: 135%;
+  letter-spacing: 0;
+  font-weight: 300;
+}
+
+.text-preset-2-bold {
+  font-size: 1.5rem;
+  line-height: 135%;
+  letter-spacing: 0;
+  font-weight: bold;
+}
+
+.text-preset-2-medium {
+  font-size: 1.5rem;
+  line-height: 135%;
+  letter-spacing: 0;
+  font-weight: 500;
+}
+
+/* Styling actual page */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url(images/pattern-curve.svg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+/* Styling Slider Container */
+
+.slider-container {
+  width: 37.5rem;
+  height: 100%;
+  margin: 2.4rem;
+}
+
+.author-img--container {
+  width: 32.65rem;
+  height: 30.75rem;
+  position: relative;
+}
+
+.author-img--pattern {
+  position: absolute;
+  width: 100%;
+}
+
+.author-img--photo {
+  width: 25.4rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.author-img--movement {
+  width: 8rem;
+  height: 4rem;
+  background-color: var(--color-white);
+  border-radius: 2.8rem;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: var(--spacing-200);
+  top: 77%;
+  box-shadow: 0px 15px 20px -10px rgba(36, 36, 113, 0.5);
+}
+
+.author-img--movement-btn {
+  all: unset;
+  cursor: pointer;
+}
+
+.icon-left {
+  margin-right: var(--spacing-400);
+}
