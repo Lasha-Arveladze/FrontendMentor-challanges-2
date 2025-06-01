@@ -1,3 +1,6 @@
+/* Importing font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 :root {
   /* Colors */
   --color-white: hsl(0, 100%, 100%);
@@ -19,6 +22,9 @@
   --spacing-400: 3.2rem;
   --spacing-600: 4.8rem;
   --spacing-1200: 9.6rem;
+
+  /* Font */
+  --main-font: "Inter", sans-serif;
 }
 
 /* Helper classes for typography */
@@ -57,24 +63,52 @@ html {
 }
 
 body {
-  min-height: 100vh;
+  height: 100vh;
   background-image: url(images/pattern-curve.svg);
   background-repeat: no-repeat;
   background-position: bottom left;
+  background-size: 28rem;
+  padding-top: 1px;
+  font-family: var(--main-font);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonial-section {
+  width: 37.5rem;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
 
 /* Styling Slider Container */
 
 .slider-container {
-  width: 37.5rem;
-  height: 100%;
-  margin: 2.4rem;
+  padding-top: var(--spacing-300);
+  height: auto;
+}
+
+.wrapper {
+  height: auto;
+}
+
+.slider--component {
+  position: absolute;
+  transition: all 0.5s;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .author-img--container {
   width: 32.65rem;
   height: 30.75rem;
   position: relative;
+  margin-bottom: var(--spacing-600);
 }
 
 .author-img--pattern {
@@ -97,7 +131,7 @@ body {
   position: absolute;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   left: 50%;
   transform: translateX(-50%);
   padding: var(--spacing-200);
@@ -110,6 +144,149 @@ body {
   cursor: pointer;
 }
 
-.icon-left {
-  margin-right: var(--spacing-400);
+/* styling slider text container */
+
+.slider-text--container {
+  width: 31rem;
+  text-align: center;
+  position: relative;
+  margin: var(--spacing-400);
+}
+
+.slider-text--pattern {
+  position: absolute;
+  width: 6rem;
+  height: 5rem;
+  transform: translateX(-50%);
+  top: -20%;
+}
+
+.slider--text {
+  margin-bottom: var(--spacing-200);
+  color: var(--color-blue);
+}
+
+/* Styling autor name and proffesion */
+
+.author-name {
+  color: var(--color-blue);
+}
+
+.author-prof {
+  color: var(--color-gray-400);
+}
+
+.author-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* FOR TABLET: 768PX */
+@media (min-width: 48rem) {
+  .text-preset-1 {
+    font-size: 3.2rem;
+    line-height: 137.5%;
+  }
+
+  .testimonial-section {
+    width: 76.8rem;
+  }
+  .author-img--container {
+    width: 52rem;
+    height: 48.97rem;
+  }
+
+  .author-img--photo {
+    width: 40.4rem;
+    height: 40.2rem;
+  }
+  .author-img--movement {
+    width: 11.2rem;
+    height: 5.6rem;
+  }
+
+  .slider-text--container {
+    width: 63.5rem;
+  }
+
+  .slider--text {
+    margin-bottom: var(--spacing-400);
+  }
+
+  .slider-text--pattern {
+    width: 12rem;
+    height: 10rem;
+    top: -25%;
+  }
+
+  .author-box {
+    flex-direction: row;
+  }
+
+  .author-name {
+    margin-right: var(--spacing-100);
+  }
+}
+
+/* For Desktop: 1440px */
+
+@media (min-width: 90rem) {
+  .text-preset-2-bold {
+    font-size: 2rem;
+    line-height: 190%;
+  }
+
+  .text-preset-2-medium {
+    font-size: 2rem;
+    line-height: 190%;
+  }
+
+  .slider--component {
+    flex-direction: row-reverse;
+  }
+
+  .testimonial-section {
+    width: 120rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .author-img--container {
+    width: 69.7rem;
+    height: 65.7rem;
+  }
+  .author-img--photo {
+    width: 54rem;
+    height: 54rem;
+  }
+  .author-img--movement {
+    width: 11.2rem;
+    height: 5.6rem;
+    left: 20%;
+    transform: translateX(0);
+  }
+
+  .slider-text--container {
+    margin: 0;
+    text-align: left;
+    margin-right: -14.5rem;
+    z-index: 2;
+  }
+
+  .slider-text--pattern {
+    transform: translateX(70%);
+  }
+
+  .author-box {
+    display: block;
+    text-align: left;
+  }
+  .slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
