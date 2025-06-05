@@ -1,0 +1,337 @@
+/* Importing Font */
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+:root {
+  /* Colors */
+  --color-white: hsl(0, 100%, 100%);
+  --color-black: hsl(0, 0%, 0%);
+  --color-orange: hsl(13, 70%, 60%);
+
+  /* Grey Color */
+  --color-grey-600: hsl(180, 25%, 32%);
+  --color-grey-550: hsl(180, 18%, 40%);
+  --color-grey-500: hsl(186, 14%, 43%);
+  --color-grey-400: hsl(184, 14%, 56%);
+  --color-grey-300: hsl(184, 19%, 68%);
+  --color-grey-200: hsl(185, 41%, 84%);
+  --color-grey-50: hsl(189, 47%, 97%);
+
+  /* Green Color */
+  --color-green-900: hsl(183, 100%, 15%);
+  --color-green-800: hsl(183, 85%, 21%);
+  --color-green-750: hsl(183, 79%, 24%);
+  --color-green-400: hsl(172, 67%, 45%);
+  --color-green-200: hsl(173, 61%, 77%);
+
+  /* Spacing System */
+  --spacing-1600: 12.8rem;
+  --spacing-1500: 12rem;
+  --spacing-1200: 9.6rem;
+  --spacing-1000: 8rem;
+  --spacing-600: 4.8rem;
+  --spacing-400: 3.2rem;
+  --spacing-300: 2.4rem;
+  --spacing-200: 1.6rem;
+  --spacing-100: 0.8rem;
+
+  /* Font */
+  --main-font: "Space Mono", monospace;
+}
+
+/* Helper classes */
+.text-preset-1 {
+  font-size: 4.8rem;
+  line-height: 7.1rem;
+  letter-spacing: -0.1rem;
+}
+.text-preset-2 {
+  font-size: 3.2rem;
+  line-height: 4.7rem;
+  letter-spacing: -0.067rem;
+}
+.text-preset-3 {
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  letter-spacing: 0;
+}
+.text-preset-4 {
+  font-size: 2rem;
+  line-height: 3rem;
+  letter-spacing: 0rem;
+}
+.text-preset-5 {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  letter-spacing: 0rem;
+}
+.text-preset-6 {
+  font-size: 1.3rem;
+  line-height: 1.9rem;
+  letter-spacing: 0rem;
+}
+
+/* //////////////////////////////////// */
+/* Hiding the arrow in type="number" inputs */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Hide spin buttons in Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+/* //////////////////////////////////// */
+
+/* Styling the Content */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-weight: bold;
+}
+
+body {
+  font-family: var(--main-font);
+  background-color: var(--color-green-200);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Styling header */
+.tip--header {
+  width: 37.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: var(--spacing-400) 0;
+}
+
+.tip-header--headline {
+  letter-spacing: 0.8rem;
+  line-height: 2.6rem;
+  color: var(--color-grey-600);
+  width: 8.6rem;
+  overflow-wrap: break-word;
+}
+
+/* styling tip box */
+
+.tip-calculator--box {
+  background-color: var(--color-white);
+  width: 37.5rem;
+  border-radius: 2.5rem;
+  padding: var(--spacing-400) var(--spacing-400);
+}
+
+.label-text,
+.selection-tip--headline {
+  display: inline-block;
+  color: var(--color-grey-500);
+  margin-bottom: var(--spacing-100);
+}
+
+.bill-input-header,
+.people-input-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.error-message-bill,
+.error-message-people {
+  color: var(--color-orange);
+}
+
+label,
+input {
+  display: block;
+}
+.bill-input--box {
+  margin-bottom: var(--spacing-400);
+}
+
+.input-field {
+  width: 100%;
+  padding: var(--spacing-100) var(--spacing-200);
+  font-size: 2.4rem;
+  color: var(--color-grey-300);
+  background-color: var(--color-grey-50);
+  border: none;
+  text-align: right;
+  font-family: var(--main-font);
+  color: var(--color-green-900);
+  border: 2px solid var(--color-grey-50);
+}
+
+.input-field::placeholder {
+  color: var(--color-grey-300);
+}
+
+.input-field:focus {
+  outline-color: var(--color-green-400);
+}
+
+.input-field--wrapper {
+  position: relative;
+}
+
+.input-icon,
+.input-person {
+  position: absolute;
+  font-size: 2.4rem;
+  color: var(--color-grey-300);
+  font-weight: normal;
+  top: 50%;
+  left: var(--spacing-200);
+  transform: translateY(-50%);
+}
+
+/* Styling tip-selection section */
+.selection-tip--box {
+  margin-bottom: var(--spacing-400);
+}
+
+.people-input--box {
+  margin-bottom: var(--spacing-400);
+}
+
+.tip-select--grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-200);
+}
+
+.tip-button {
+  border: none;
+  background-color: var(--color-green-900);
+  color: var(--color-white);
+  font-family: var(--main-font);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+
+.tip-button:hover,
+.active {
+  background-color: var(--color-green-200);
+  color: var(--color-green-900);
+}
+
+#tip-percentage-custom {
+  border: none;
+  background-color: var(--color-grey-50);
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.4rem;
+  height: 100%;
+  width: 100%;
+}
+#tip-percentage-custom::placeholder {
+  color: var(--color-grey-550);
+}
+
+/* Styling Results container */
+.result-box {
+  background-color: var(--color-green-900);
+  border-radius: 1.5rem;
+  color: var(--color-white);
+  padding: var(--spacing-300);
+}
+
+.tip-amount-description {
+  color: var(--color-grey-400);
+}
+
+.tip-amount-person-box,
+.tip-amount-total-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-300);
+}
+
+.result-text {
+  color: var(--color-green-400);
+}
+
+.reset-button {
+  width: 100%;
+  padding: var(--spacing-100) var(--spacing-400);
+  background-color: var(--color-green-750);
+  border: none;
+  color: var(--color-green-800);
+  border-radius: 0.8rem;
+  transition: 0.3s all;
+}
+
+.reset-button:hover {
+  cursor: pointer;
+  background-color: var(--color-green-200);
+  color: var(--color-green-900);
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .tip--header {
+    width: 60.8rem;
+  }
+
+  .tip-calculator--box {
+    width: 60.8rem;
+    padding: var(--spacing-600) var(--spacing-1000);
+  }
+
+  .bill-input--box {
+    margin-bottom: var(--spacing-300);
+  }
+
+  .tip-select--grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .selection-tip--box {
+    margin-bottom: var(--spacing-300);
+  }
+  .people-input--box {
+    margin-bottom: var(--spacing-600);
+  }
+}
+
+@media (min-width: 90rem) {
+  .tip--header {
+    width: 92rem;
+  }
+  .tip-calculator--box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-400);
+    width: 92rem;
+  }
+
+  .bill-input--box {
+    margin-bottom: var(--spacing-600);
+  }
+
+  .selection-tip--box {
+    margin-bottom: var(--spacing-600);
+  }
+
+  .people-input--box {
+    margin-bottom: 0;
+  }
+  .result-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: var(--spacing-400);
+  }
+}

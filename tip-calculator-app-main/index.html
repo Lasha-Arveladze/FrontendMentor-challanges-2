@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <section class="tip--section">
+      <div class="tip--header">
+        <h3 class="tip-header--headline text-preset-5">SPLITTER</h3>
+      </div>
+      <div class="tip-calculator--box">
+        <div>
+          <div class="bill-input--box">
+            <div class="bill-input-header">
+              <label class="label-text text-preset-5" for="bill-input"
+                >Bill</label
+              >
+              <span class="text-preset-5 error-message-bill"></span>
+            </div>
+            <div class="input-field--wrapper">
+              <img
+                class="input-icon"
+                src="images/icon-dollar.svg"
+                alt="icon-dollar"
+              />
+              <input
+                class="input-field input-field-bill"
+                type="number"
+                name="bill"
+                placeholder="0"
+                inputmode="numeric"
+                pattern="[0-9]*"
+                min="0"
+                id="bill-input"
+              />
+            </div>
+          </div>
+          <div class="selection-tip--box">
+            <span class="selection-tip--headline text-preset-5"
+              >Select Tip %</span
+            >
+            <div class="tip-select--grid">
+              <button data-percentage="5" class="tip-button text-preset-3">
+                5%
+              </button>
+              <button data-percentage="10" class="tip-button text-preset-3">
+                10%
+              </button>
+              <button data-percentage="15" class="tip-button text-preset-3">
+                15%
+              </button>
+              <button data-percentage="25" class="tip-button text-preset-3">
+                25%
+              </button>
+              <button data-percentage="50" class="tip-button text-preset-3">
+                50%
+              </button>
+              <input
+                type="text"
+                name="tip-percentage"
+                id="tip-percentage-custom"
+                placeholder="Custom"
+              />
+            </div>
+          </div>
+          <div class="people-input--box">
+            <div class="people-input-header">
+              <label class="label-text text-preset-5" for="people-number-input"
+                >Number of people</label
+              >
+              <span class="error-message-people text-preset-5"></span>
+            </div>
+            <div class="input-field--wrapper">
+              <img
+                class="input-person"
+                src="images/icon-person.svg"
+                alt="icon-dollar"
+              />
+              <input
+                class="input-field input-field-people"
+                type="number"
+                name="people-number"
+                inputmode="numeric"
+                min="0"
+                pattern="[0-9]*"
+                placeholder="0"
+                id="people-number-input"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="result-box">
+          <div class="tip-amount-box">
+            <div class="tip-amount-person-box">
+              <div class="tip-amount-text-left">
+                <h3 class="text-preset-5">Tip Amount</h3>
+                <span class="tip-amount-description text-preset-6"
+                  >/ person</span
+                >
+              </div>
+              <div class="tip-amount-text-result">
+                <span class="result-text result-text-tip text-preset-2"
+                  >$0.00</span
+                >
+              </div>
+            </div>
+            <div class="tip-amount-total-box">
+              <div class="tip-amount-text-left">
+                <h3 class="text-preset-5">Total</h3>
+                <span class="tip-amount-description text-preset-6"
+                  >/ person</span
+                >
+              </div>
+              <div class="tip-amount-text-result">
+                <span class="result-text result-text-total text-preset-2"
+                  >$0.00</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="reset-button-box">
+            <button class="reset-button text-preset-4">RESET</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 
+
+  Select Tip %
+  5%
+  10%
+  15%
+  25%
+  50%
+  Custom
+
+  Number of People
+
+  Tip Amount
+  / person
+
+  Total
+  / person
+
+  Reset -->
+  </body>
+</html>
