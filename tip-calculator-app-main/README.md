@@ -34,7 +34,7 @@ This is the preview of the following project
 
 ### What I learned
 
-This project was a good exercise to test my HTML&CSS and JavaScript skills even more. I've worked on form validation and in real time DOM manipulation, which tourned out pretty good.
+This project was a good exercise to test my HTML&CSS and JavaScript skills even more. I've worked on form validation and in real time DOM manipulation, which turned out pretty good.
 
 ### Continued development
 
