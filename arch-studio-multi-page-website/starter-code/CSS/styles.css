@@ -1,0 +1,113 @@
+/* General Stuff That are common for everyone */
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+
+:root {
+  /* Colors */
+  --color-Very-Dark-Blue: hsl(225, 13%, 12%);
+  --color-Dark-Grey: hsl(226, 6%, 40%);
+  --color-Medium-Grey: hsl(223, 7%, 53%);
+  --color-Light-Grey: hsl(225, 17%, 82%);
+  --color-Very-Light-Grey: hsl(230, 21%, 95%);
+  --color-Red-Errors: hsl(0, 68%, 61%);
+  /* Font */
+  --main-font: "League Spartan", sans-serif;
+}
+
+/* Supportive Classes */
+
+.heading-xl {
+  font-weight: bold;
+  font-size: 25rem;
+  line-height: 20rem;
+  letter-spacing: -5px;
+}
+
+.heading-l {
+  font-weight: bold;
+  font-size: 4.8rem;
+  line-height: 4.8rem;
+  letter-spacing: -1.2px;
+}
+
+.heading-m {
+  font-weight: bold;
+  font-size: 4.8rem;
+  line-height: 5.2rem;
+  letter-spacing: -1.71px;
+}
+
+.heading-s {
+  font-weight: bold;
+  font-size: 3.2rem;
+  line-height: 4rem;
+  letter-spacing: 0;
+}
+
+.body-text {
+  font-weight: medium;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  letter-spacing: 0;
+}
+
+.btn-text {
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  letter-spacing: 0;
+}
+
+/* BTN Classes */
+
+.btn-arrow {
+  width: 2.4rem;
+  filter: invert(1);
+}
+
+.btn-normal-text-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-Very-Dark-Blue);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 2rem 3rem;
+}
+
+.btn-normal-text-arrow span {
+  margin-right: 2.4rem;
+}
+
+.btn-normal-arrow {
+  background-color: var(--color-Very-Dark-Blue);
+}
+
+.btn-normal-hover {
+  background-color: var(--color-Dark-Grey);
+}
+
+.btn-normal-arrow {
+  background-color: var(--color-Light-Grey);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--main-font);
+}
+
+/* divider */
+.divider {
+  width: 6.5rem;
+  height: 1px;
+  background-color: var(--color-Light-Grey);
+}

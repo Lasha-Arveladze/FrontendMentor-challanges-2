@@ -1,0 +1,177 @@
+/* Styling header */
+.container {
+  max-width: 37.5rem;
+}
+.header {
+  margin-bottom: 7.2rem;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3.2rem;
+}
+
+.header-logo,
+.header-hamburger {
+  display: inline-block;
+}
+
+/* Creating hero */
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.image-container-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+.overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.image-text-box {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  width: 100%;
+  height: 100%;
+  padding: 0 3.2rem;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 2;
+}
+
+.image-text-box h2 {
+  margin-bottom: 1rem;
+}
+
+.image-text-box p {
+  margin-bottom: 8.3rem;
+}
+.image-text-box button {
+  width: 26rem;
+}
+
+/* Welcome Section */
+
+.section-welcome {
+  padding: 0 3.6rem;
+  margin-bottom: 11.3rem;
+}
+
+.divider {
+  margin-bottom: 6.8rem;
+}
+.section-welcome h3 {
+  margin-bottom: 2.2rem;
+}
+
+.section-welcome--description p {
+  margin-bottom: 30px;
+  color: var(--color-Dark-Grey);
+}
+
+/* About Section */
+
+.section-about {
+  margin-bottom: 7.3rem;
+}
+
+.section-about .image-text-box h2 {
+  margin-bottom: 2.3rem;
+}
+
+.section-about .image-text-box button {
+  width: 19rem;
+}
+
+/* Feature Section */
+
+.section-featured {
+  padding: 0 3.2rem;
+  margin-bottom: 13.2rem;
+}
+
+.section-featured h3 {
+  margin-bottom: 4.3rem;
+}
+
+.section-featured-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.section-featured .image-text-box {
+  justify-content: flex-end;
+  padding: 2.3rem;
+}
+
+.section-featured .image-container .overlay {
+  background-color: transparent;
+  background-image: linear-gradient(
+    to top,
+    rgba(15, 45, 50, 0.7),
+    rgba(20, 25, 30, 0.4),
+    rgba(15, 45, 50, 0.1)
+  );
+}
+
+.section-featured button {
+  width: 100%;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--color-Very-Light-Grey);
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem 5.8rem;
+}
+
+.company-logo-footer {
+  width: 12rem;
+  height: 12rem;
+  background-color: var(--color-Very-Dark-Blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.footer-logo {
+  filter: brightness(0) invert(1);
+  width: 5.8rem;
+}
+
+.footer nav li {
+  color: var(--color-Medium-Grey);
+  margin-bottom: 3.2rem;
+}
+
+.footer nav ul {
+  list-style: none;
+  padding-top: 4rem;
+}
