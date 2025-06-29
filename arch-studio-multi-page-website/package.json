@@ -1,5 +1,20 @@
 {
   "dependencies": {
+    "leaflet": "^1.9.4",
     "swiper": "^11.2.9"
-  }
+  },
+  "name": "arch-studio-multi-page-website",
+  "version": "1.0.0",
+  "description": "![Design preview for the Arch Studio multi-page website coding challenge](./preview.jpg)",
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  },
+  "scripts": {
+    "start": "parcel starter-code/index.html",
+    "build": "parcel build starter-code/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

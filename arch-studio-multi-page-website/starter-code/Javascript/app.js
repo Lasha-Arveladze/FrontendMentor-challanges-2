@@ -31,3 +31,4 @@ closeBtn.addEventListener("click", closeModal);
 overlay.forEach((slide) => {
   slide.addEventListener("click", closeModal);
 });
+window.addEventListener("scroll", closeModal);

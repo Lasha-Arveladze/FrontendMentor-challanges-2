@@ -1,16 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Arch Studio Website Challenge</title>
-</head>
-<body>
-
-  Contact
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="stylesheet" href="CSS/about.css" />
+    <link rel="stylesheet" href="../node_modules/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="CSS/contact.css" />
+    <script defer src="Javascript/app.js"></script>
+    <script type="module" defer src="Javascript/contact.js"></script>
+    <title>Frontend Mentor | Arch Studio Website Challenge</title>
+  </head>
+  <body>
+    <header class="header container">
+      <nav class="header-nav">
+        <a href="index.html"
+          ><img class="header-logo" src="assets/logo.svg" alt="Company Logo"
+        /></a>
+        <img
+          class="header-hamburger"
+          src="assets/icons/icon-hamburger.svg"
+          alt="hamburger icon"
+        />
+        <img
+          class="header-hamburger close"
+          src="assets/icons/icon-close.svg"
+          alt="hamburger icon close"
+        />
+        <div class="header-navigation-box">
+          <ul>
+            <a href="portfolio.html">
+              <li class="heading-s">Portfolio</li>
+            </a>
+            <a href="about.html">
+              <li class="heading-s">About Us</li>
+            </a>
+            <a href="contact.html">
+              <li class="heading-s">Contact</li>
+            </a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main container">
+      <section class="section-hero">
+        <div class="image-container">
+          <img
+            src="assets/contact/mobile/image-hero.jpg"
+            alt="mobile Picture"
+          />
+        </div>
+        <div class="section-hero-textbox">
+          <h3 class="heading-m">Tell us about your project</h3>
+          <p class="body-text">
+            We’d love to hear more about your project. Please, leave a message
+            below or give us a call. We have two offices, one in Texas and one
+            in Tennessee. If you find yourself nearby, come say hello!
+          </p>
+        </div>
+      </section>
+      <section class="section-contact">
+        <div class="divider"></div>
+        <h3 class="heading-m">
+          Contact <br />
+          Details
+        </h3>
+        <div class="section-heritage--description body-text">
+          <div class="contact-info-box body-text">
+            <h4 class="btn-text">Main Office</h4>
+            <p>Mail : archone@mail.com</p>
+            <p>Address : 1892 Chenoweth Drive TN</p>
+            <p>Phone : 123-456-3451</p>
+            <a href="#">
+              <button class="view-btn body-text">
+                <span class="btn-text">View on map</span
+                ><img src="assets/icons/icon-arrow.svg" alt="arrow-icon" />
+              </button>
+            </a>
+          </div>
+          <div class="contact-info-box body-text">
+            <h4 class="btn-text">Office II</h4>
+            <p>Mail : archtwo@mail.com</p>
+            <p>Address : 3399 Wines Lane TX</p>
+            <p>Phone : 832-123-4321</p>
+            <a href="#">
+              <button class="view-btn body-text">
+                <span class="btn-text">View on map</span
+                ><img src="assets/icons/icon-arrow.svg" alt="arrow-icon" />
+              </button>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="section-map">
+        <div id="map"></div>
+      </section>
+    </main>
+    <footer class="footer container">
+      <a href="index.html">
+        <div class="company-logo-footer">
+          <img class="footer-logo" src="assets/logo.svg" alt="logo svg" />
+        </div>
+      </a>
+      <nav>
+        <ul>
+          <a href="portfolio.html">
+            <li class="btn-text">Portfolio</li>
+          </a>
+          <a href="about.html">
+            <li class="btn-text">About Us</li>
+          </a>
+          <a href="contact.html">
+            <li class="btn-text">Contact</li>
+          </a>
+        </ul>
+      </nav>
+      <a href="portfolio.html">
+        <button class="btn-normal-text-arrow btn-text">
+          <span>See Our Portfolio</span>
+          <img
+            class="btn-arrow"
+            src="assets/icons/icon-arrow.svg"
+            alt="arrow-icon"
+          />
+        </button>
+      </a>
+    </footer>
+    <!-- Contact
 
   Portfolio
   About Us
@@ -51,7 +167,6 @@
   About Us
   Contact
 
-  See Our Portfolio
-
-</body>
+  See Our Portfolio -->
+  </body>
 </html>

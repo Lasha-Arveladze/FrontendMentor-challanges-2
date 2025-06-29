@@ -1,60 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Arch Studio Website Challenge</title>
-</head>
-<body>
-
-  About Us
-
-  Portfolio
-  About Us
-  Contact
-
-  About
-
-  Your team of professionals
-
-  Our small team of world-class professionals will work with you every step of the way. 
-  Strong relationships are at the core of everything we do. This extends to the 
-  relationship our projects have with their surroundings.
-
-  Our Heritage
-
-  Founded in 2007, we started as a trio of architects. Our complimentary skills and 
-  relentless attention to detail turned Arch into one of the most sought after boutique 
-  firms in the country.
-
-  Speciliazing in Urban Design allowed us to focus on creating exceptional structures that 
-  live in harmony with their surroundings. We consider every detail from every surrounding 
-  element to inform our designs. 
-
-  Our small team of world-class professionals provides input on every project.
-
-  The Leaders
-
-  Jake Richards
-  Chief Architect
-
-  Thompson Smith
-  Head of Finance
-
-  Jackson Rourke
-  Lead Designer
-
-  Maria Simpson
-  Senior Architect
-
-  Portfolio
-  About Us
-  Contact
-
-  See Our Portfolio
-
-</body>
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="stylesheet" href="CSS/index.css" />
+    <link rel="stylesheet" href="CSS/about.css" />
+    <script defer src="Javascript/app.js"></script>
+    <title>Frontend Mentor | Arch Studio Website Challenge</title>
+  </head>
+  <body>
+    <header class="header container">
+      <nav class="header-nav">
+        <a href="index.html"
+          ><img class="header-logo" src="assets/logo.svg" alt="Company Logo"
+        /></a>
+        <img
+          class="header-hamburger"
+          src="assets/icons/icon-hamburger.svg"
+          alt="hamburger icon"
+        />
+        <img
+          class="header-hamburger close"
+          src="assets/icons/icon-close.svg"
+          alt="hamburger icon close"
+        />
+        <div class="header-navigation-box">
+          <ul>
+            <a href="portfolio.html">
+              <li class="heading-s">Portfolio</li>
+            </a>
+            <a href="about.html">
+              <li class="heading-s">About Us</li>
+            </a>
+            <a href="contact.html">
+              <li class="heading-s">Contact</li>
+            </a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main container">
+      <section class="section-hero">
+        <div class="image-container">
+          <img
+            src="assets/about/mobile/image-hero.jpg"
+            alt="working on laptop"
+          />
+        </div>
+        <div class="section-hero-textbox">
+          <h3 class="heading-m">Your team of professionals</h3>
+          <p class="body-text">
+            Our small team of world-class professionals will work with you every
+            step of the way. Strong relationships are at the core of everything
+            we do. This extends to the relationship our projects have with their
+            surroundings.
+          </p>
+        </div>
+      </section>
+      <section class="section-heritage">
+        <div class="divider"></div>
+        <h3 class="heading-m">
+          Our <br />
+          Heritage
+        </h3>
+        <div class="section-welcome--description body-text">
+          <p>
+            Founded in 2007, we started as a trio of architects. Our
+            complimentary skills and relentless attention to detail turned Arch
+            into one of the most sought after boutique firms in the country.
+          </p>
+          <p>
+            Speciliazing in Urban Design allowed us to focus on creating
+            exceptional structures that live in harmony with their surroundings.
+            We consider every detail from every surrounding element to inform
+            our designs.
+          </p>
+          <p>
+            Our small team of world-class professionals provides input on every
+            project.
+          </p>
+        </div>
+      </section>
+      <section class="section-leaders">
+        <div class="section-featured-grid">
+          <h3 class="heading-m">The <br />Leaders</h3>
+          <div class="image-container">
+            <img
+              class="image-container-img"
+              src="assets/about/desktop/avatar-jake.jpg"
+              alt="Leader Jake Picture"
+            />
+            <div class="image-text-box">
+              <h2 class="heading-s">Jake Richards</h2>
+              <span class="body-text">Chief Architect</span>
+            </div>
+          </div>
+          <div class="image-container">
+            <img
+              class="image-container-img"
+              src="assets/about/desktop/avatar-thompson.jpg"
+              alt="Leader Thompson Picture"
+            />
+            <div class="image-text-box">
+              <h2 class="heading-s">Thompson Smith</h2>
+              <span class="body-text">Head of Finance</span>
+            </div>
+          </div>
+          <div class="image-container">
+            <img
+              class="image-container-img"
+              src="assets/about/desktop/avatar-jackson.jpg"
+              alt="Leader Jackson Picture"
+            />
+            <div class="image-text-box">
+              <h2 class="heading-s">Jackson Rourke</h2>
+              <span class="body-text">Lead Designer</span>
+            </div>
+          </div>
+          <div class="image-container">
+            <img
+              class="image-container-img"
+              src="assets/about/desktop/avatar-maria.jpg"
+              alt="Leader Maria Picture"
+            />
+            <div class="image-text-box">
+              <h2 class="heading-s">Maria Simpson</h2>
+              <span class="body-text">Senior Architect</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer container">
+      <a href="index.html">
+        <div class="company-logo-footer">
+          <img class="footer-logo" src="assets/logo.svg" alt="logo svg" />
+        </div>
+      </a>
+      <nav>
+        <ul>
+          <a href="portfolio.html">
+            <li class="btn-text">Portfolio</li>
+          </a>
+          <a href="about.html">
+            <li class="btn-text">About Us</li>
+          </a>
+          <a href="contact.html">
+            <li class="btn-text">Contact</li>
+          </a>
+        </ul>
+      </nav>
+      <a href="portfolio.html">
+        <button class="btn-normal-text-arrow btn-text">
+          <span>See Our Portfolio</span>
+          <img
+            class="btn-arrow"
+            src="assets/icons/icon-arrow.svg"
+            alt="arrow-icon"
+          />
+        </button>
+      </a>
+    </footer>
+  </body>
 </html>

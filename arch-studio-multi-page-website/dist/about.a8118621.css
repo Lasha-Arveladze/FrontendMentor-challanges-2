@@ -1,0 +1,51 @@
+.section-hero {
+  position: relative;
+}
+
+.section-hero-textbox {
+  background-color: #fff;
+  width: 34.3rem;
+  height: 30rem;
+  margin-bottom: 7.6rem;
+  padding: 3.2rem 0 0 3.2rem;
+  position: absolute;
+  top: 70%;
+}
+
+.section-hero-textbox h3 {
+  margin-bottom: 2.1rem;
+}
+
+.section-heritage {
+  margin-top: 30rem;
+  padding: 3.2rem;
+}
+
+.section-heritage h3 {
+  margin-bottom: 2.1rem;
+}
+
+.section-leaders {
+  padding: 3.2rem;
+}
+
+.section-leaders h3 {
+  margin-bottom: 5.5rem;
+}
+
+.section-featured-grid .image-text-box {
+  color: #000;
+  height: auto;
+  margin-top: 1.5rem;
+  padding: 0;
+  position: static;
+}
+
+.image-text-box h2 {
+  margin: 0;
+}
+
+.section-leaders .image-container {
+  margin-bottom: 8rem;
+}
+/*# sourceMappingURL=about.a8118621.css.map */

@@ -1,0 +1,75 @@
+.image-container-image {
+  width: 100%;
+  height: auto;
+  transition: transform .3s ease-in-out;
+  display: block;
+}
+
+.overlay {
+  z-index: 1;
+  background-color: #0006;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.image-text-box {
+  color: #fff;
+  z-index: 2;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 3.2rem;
+  transition: opacity .3s ease-in-out;
+  display: flex;
+  position: absolute;
+  top: 0;
+}
+
+.image-text-box h2 {
+  margin-bottom: 1rem;
+}
+
+.image-text-box p {
+  margin-bottom: 8.3rem;
+}
+
+.image-text-box button {
+  width: 26rem;
+}
+
+.section-welcome {
+  margin-bottom: 11.3rem;
+  padding: 0 3.6rem;
+}
+
+.section-welcome h3 {
+  margin-bottom: 2.2rem;
+}
+
+.section-welcome--description p {
+  color: var(--color-Dark-Grey);
+  margin-bottom: 30px;
+}
+
+.section-about {
+  margin-bottom: 7.3rem;
+}
+
+.section-about .image-text-box h2 {
+  margin-bottom: 2.3rem;
+}
+
+.section-about .image-text-box button {
+  width: 19rem;
+}
+
+.section-featured button {
+  width: 100%;
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+/*# sourceMappingURL=starter-code.6df0de19.css.map */

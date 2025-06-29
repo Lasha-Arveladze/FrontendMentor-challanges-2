@@ -1,0 +1,49 @@
+.section-contact {
+  margin-top: 30rem;
+  padding: 3.2rem;
+}
+
+.section-contact h3 {
+  margin-bottom: 4rem;
+}
+
+.view-btn {
+  color: #000;
+  background-color: #fff;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.view-btn span {
+  margin-right: 2.4rem;
+}
+
+.contact-info-box {
+  color: var(--color-Dark-Grey);
+  margin-bottom: 4.4rem;
+}
+
+.contact-info-box button {
+  cursor: pointer;
+}
+
+.contact-info-box h4 {
+  margin-bottom: 1.4rem;
+}
+
+.contact-info-box a {
+  margin-top: 4.3rem;
+  display: inline-block;
+}
+
+#map {
+  width: 100%;
+  height: 36.7rem;
+}
+
+.section-map {
+  margin-bottom: 7.3rem;
+}
+/*# sourceMappingURL=contact.c7431281.css.map */

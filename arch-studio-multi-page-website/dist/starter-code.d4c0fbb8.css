@@ -1,0 +1,239 @@
+@import "https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap";
+:root {
+  --color-Very-Dark-Blue: #1b1d23;
+  --color-Dark-Grey: #60636c;
+  --color-Medium-Grey: #7f8490;
+  --color-Light-Grey: #c9cdd9;
+  --color-Very-Light-Grey: #f0f0f5;
+  --color-Red-Errors: #df5858;
+  --main-font: "League Spartan", sans-serif;
+}
+
+.heading-xl {
+  letter-spacing: -5px;
+  font-size: 25rem;
+  font-weight: bold;
+  line-height: 20rem;
+}
+
+.heading-l {
+  letter-spacing: -1.2px;
+  font-size: 4.8rem;
+  font-weight: bold;
+  line-height: 4.8rem;
+}
+
+.heading-m {
+  letter-spacing: -1.71px;
+  font-size: 4.8rem;
+  font-weight: bold;
+  line-height: 5.2rem;
+}
+
+.heading-s {
+  letter-spacing: 0;
+  font-size: 3.2rem;
+  font-weight: bold;
+  line-height: 4rem;
+}
+
+.body-text {
+  font-weight: medium;
+  letter-spacing: 0;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+}
+
+.btn-text {
+  letter-spacing: 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 2.4rem;
+}
+
+.btn-arrow {
+  filter: invert();
+  width: 2.4rem;
+}
+
+.btn-normal-text-arrow {
+  background-color: var(--color-Very-Dark-Blue);
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 3rem;
+  transition: all .3s;
+  display: flex;
+}
+
+.btn-normal-text-arrow:hover {
+  background-color: var(--color-Dark-Grey);
+}
+
+.btn-normal-text-arrow:active {
+  background-color: var(--color-Light-Grey);
+}
+
+.btn-normal-text-arrow span {
+  margin-right: 2.4rem;
+}
+
+.btn-normal-arrow {
+  background-color: var(--color-Very-Dark-Blue);
+}
+
+.btn-normal-arrow:hover {
+  background-color: var(--color-Dark-Grey);
+}
+
+.btn-normal-arrow:active {
+  background-color: var(--color-Light-Grey);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--main-font);
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 37.5rem;
+}
+
+.header-nav {
+  justify-content: space-between;
+  align-items: center;
+  padding: 3.2rem;
+  display: flex;
+  position: relative;
+}
+
+.header-logo, .header-hamburger {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.close {
+  display: none;
+}
+
+.header-navigation-box {
+  opacity: 0;
+  background-color: var(--color-Very-Light-Grey);
+  z-index: 10;
+  width: 34.3rem;
+  height: 23.5rem;
+  padding: 4.8rem;
+  transition: all .3s ease-in-out;
+  position: absolute;
+  top: 100%;
+  left: 100%;
+  box-shadow: 7px 8px 54px 24px #00000082;
+}
+
+.header-navigation-box ul {
+  list-style: none;
+}
+
+.header-navigation-box ul li {
+  color: var(--color-Very-Dark-Blue);
+  cursor: pointer;
+  margin-bottom: 1.7rem;
+}
+
+.footer {
+  background-color: var(--color-Very-Light-Grey);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 5rem 5.8rem;
+  display: flex;
+  position: relative;
+}
+
+.company-logo-footer {
+  background-color: var(--color-Very-Dark-Blue);
+  justify-content: center;
+  align-items: center;
+  width: 12rem;
+  height: 12rem;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.footer-logo {
+  filter: brightness(0) invert();
+  width: 5.8rem;
+}
+
+.footer nav li {
+  color: var(--color-Medium-Grey);
+  margin-bottom: 3.2rem;
+}
+
+.footer nav ul {
+  padding-top: 4rem;
+  list-style: none;
+}
+
+.section-featured {
+  margin-bottom: 13.2rem;
+  padding: 0 3.2rem;
+}
+
+.section-featured h3 {
+  margin-bottom: 4.3rem;
+}
+
+.section-featured-grid {
+  grid-template-columns: 1fr;
+  row-gap: 2.4rem;
+  margin-bottom: 2.4rem;
+  display: grid;
+}
+
+.section-featured-grid .image-text-box {
+  justify-content: flex-end;
+  padding: 2.3rem;
+}
+
+.section-featured-grid .image-container .overlay {
+  background-color: #0000;
+  background-image: linear-gradient(to top, #0f2d32b3, #14191e66, #0f2d321a);
+}
+
+.image-container {
+  max-width: 100%;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.divider {
+  background-color: var(--color-Light-Grey);
+  width: 6.5rem;
+  height: 1px;
+  margin-bottom: 6.8rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+/*# sourceMappingURL=starter-code.d4c0fbb8.css.map */
