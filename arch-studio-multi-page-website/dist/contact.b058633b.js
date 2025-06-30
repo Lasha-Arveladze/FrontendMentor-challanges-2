@@ -743,6 +743,56 @@ const bounds = _leafletSrcEsmJs.latLngBounds([
 map.fitBounds(bounds, {
     maxZoom: 10
 });
+// Contact form Validation
+const form = document.querySelector(".form");
+const name = document.getElementById("name");
+const email = document.getElementById("email");
+const message = document.getElementById("message");
+const init = ()=>{
+    name.value = "";
+    email.value = "";
+    message.value = "";
+    document.querySelector(".nameError").style.display = "none";
+    name.style.borderColor = "var(--color-Very-Dark-Blue)";
+    name.classList.remove("error-placeholder");
+    document.querySelector(".emailError").style.display = "none";
+    email.style.borderColor = "var(--color-Very-Dark-Blue)";
+    email.classList.remove("error-placeholder");
+    document.querySelector(".messageError").style.display = "none";
+    message.style.borderColor = "var(--color-Very-Dark-Blue)";
+    message.classList.remove("error-placeholder");
+};
+form.addEventListener("submit", (e)=>{
+    e.preventDefault();
+    let errorCount = 0;
+    if (name.value.trim().length < 2) {
+        document.querySelector(".nameError").style.display = "block";
+        name.style.borderColor = "var(--color-Red-Errors)";
+        name.classList.add("error-placeholder");
+        errorCount++;
+    }
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email.value.trim())) {
+        document.querySelector(".emailError").style.display = "block";
+        email.style.borderColor = "var(--color-Red-Errors)";
+        email.classList.add("error-placeholder");
+        errorCount++;
+    }
+    if (message.value.trim().length < 10) {
+        document.querySelector(".messageError").style.display = "block";
+        message.style.borderColor = "var(--color-Red-Errors)";
+        message.classList.add("error-placeholder");
+        errorCount++;
+    }
+    if (errorCount === 0) {
+        const alertBox = document.getElementById("successAlert");
+        alertBox.classList.add("show");
+        init();
+        setTimeout(()=>{
+            alertBox.classList.remove("show");
+        }, 3000);
+    }
+});
 
 },{"../../node_modules/leaflet/dist/leaflet-src.esm.js":"9Zu8G"}],"9Zu8G":[function(require,module,exports,__globalThis) {
 /* @preserve

@@ -78,6 +78,30 @@
       <section class="section-map">
         <div id="map"></div>
       </section>
+      <section class="section-contact-form">
+        <h3 class="heading-m">
+          Connect<br>
+          with us
+        </h3>
+        <form class="form">
+          <div class="form-container">
+            <input type="text" id="name" class="input" placeholder="Name">
+            <span class="error-message nameError">Can't be empty</span>
+          </div>
+          <div class="form-container">
+            <input type="email" id="email" class="input" placeholder="Email">
+            <span class="error-message emailError">Wrong email!</span>
+          </div>
+          <div class="form-container message">
+            <textarea type="text" class="input" id="message" placeholder="Message"></textarea>
+            <span class="error-message messageError">Can't be empty</span>
+          </div>
+          <button class="button-submit-form btn-normal-arrow">
+            <img src="/icon-arrow.617230c1.svg" alt="arrow-icon" class="btn-arrow">
+          </button>
+          <div id="successAlert" class="alert">Message sent successfully!</div>
+        </form>
+      </section>
     </main>
     <footer class="footer container">
       <a href="/index.html">

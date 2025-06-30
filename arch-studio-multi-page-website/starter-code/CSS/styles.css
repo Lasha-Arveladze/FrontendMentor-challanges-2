@@ -90,6 +90,7 @@
 
 .btn-normal-arrow {
   background-color: var(--color-Very-Dark-Blue);
+  transition: all 0.3s;
 }
 
 .btn-normal-arrow:hover {
