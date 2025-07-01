@@ -25,10 +25,16 @@ const openModal = () => {
   });
 };
 
-// Handling burger Functionality
-burgerMenu.addEventListener("click", openModal);
-closeBtn.addEventListener("click", closeModal);
-overlay.forEach((slide) => {
-  slide.addEventListener("click", closeModal);
-});
-window.addEventListener("scroll", closeModal);
+console.log(window.innerWidth);
+
+if (window.innerWidth < 768) {
+  // Handling burger Functionality
+  burgerMenu.addEventListener("click", openModal);
+  closeBtn.addEventListener("click", closeModal);
+  overlay.forEach((slide) => {
+    slide.addEventListener("click", closeModal);
+  });
+  window.addEventListener("scroll", closeModal);
+
+  console.log(imgSlider4.src);
+}

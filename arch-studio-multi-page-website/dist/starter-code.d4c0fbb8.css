@@ -106,11 +106,18 @@ html {
 
 body {
   font-family: var(--main-font);
+  flex-direction: column;
+  align-items: center;
+  display: flex;
   overflow-x: hidden;
 }
 
 .container {
   max-width: 37.5rem;
+}
+
+.header {
+  width: 100%;
 }
 
 .header-nav {
@@ -121,9 +128,13 @@ body {
   position: relative;
 }
 
-.header-logo, .header-hamburger {
+.header-logo {
   cursor: pointer;
   display: inline-block;
+}
+
+.header-hamburger {
+  cursor: pointer;
 }
 
 .close {
@@ -236,5 +247,110 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.img-tablet, .img-desktop {
+  display: none;
+}
+
+@media (width >= 48rem) {
+  .heading-l {
+    font-size: 9.6rem;
+    line-height: 8rem;
+  }
+
+  .heading-m {
+    letter-spacing: -1.2px;
+    font-size: 7.2rem;
+    line-height: 6.4rem;
+  }
+
+  .container {
+    max-width: 57.3rem;
+  }
+
+  .header-hamburger {
+    opacity: 0;
+  }
+
+  .header-nav {
+    padding: 5.6rem 0;
+  }
+
+  .header-navigation-box {
+    opacity: 1;
+    box-shadow: none;
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    display: block;
+    position: static;
+  }
+
+  .header-navigation-box ul {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .header-navigation-box ul li {
+    color: var(--color-Dark-Grey);
+    margin-bottom: 0;
+    margin-right: 6rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+    transition: all .3s;
+  }
+
+  .header-navigation-box ul li:hover {
+    color: var(--color-Very-Dark-Blue);
+  }
+
+  .footer {
+    align-self: stretch;
+    width: 61.2rem;
+    height: 12rem;
+    padding: 0;
+    display: flex;
+    position: relative;
+  }
+
+  .footer nav {
+    justify-content: center;
+    width: 100%;
+    display: flex;
+  }
+
+  .company-logo-footer {
+    margin-right: 4rem;
+    top: 0;
+    left: 0;
+    transform: translateX(0);
+  }
+
+  .footer nav ul {
+    justify-content: space-between;
+    align-items: center;
+    width: 31.3rem;
+    display: flex;
+  }
+
+  .portfolio-footer-button {
+    width: 27rem;
+    position: absolute;
+    left: 84%;
+  }
+
+  .portfolio-footer-button button {
+    padding: 2rem 3rem;
+  }
+}
+
+@media (width >= 1024px) {
+  .footer {
+    align-self: center;
+  }
 }
 /*# sourceMappingURL=starter-code.d4c0fbb8.css.map */

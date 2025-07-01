@@ -115,10 +115,17 @@ html {
 body {
   font-family: var(--main-font);
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 /* Header */
 .container {
   max-width: 37.5rem;
+}
+.header {
+  width: 100%;
 }
 
 .header-nav {
@@ -129,9 +136,12 @@ body {
   position: relative;
 }
 
-.header-logo,
-.header-hamburger {
+.header-logo {
   display: inline-block;
+  cursor: pointer;
+}
+
+.header-hamburger {
   cursor: pointer;
 }
 
@@ -254,4 +264,109 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.img-tablet,
+.img-desktop {
+  display: none;
+}
+
+@media (min-width: 48rem) {
+  .heading-l {
+    font-size: 9.6rem;
+    line-height: 8rem;
+  }
+
+  .heading-m {
+    font-size: 7.2rem;
+    line-height: 6.4rem;
+    letter-spacing: -1.2px;
+  }
+
+  .container {
+    max-width: 57.3rem;
+  }
+
+  .header-hamburger {
+    opacity: 0;
+  }
+
+  .header-nav {
+    padding: 5.6rem 0;
+  }
+
+  .header-navigation-box {
+    opacity: 1;
+    display: block;
+    position: static;
+    box-shadow: none;
+    background-color: #fff;
+    padding: 0;
+    height: auto;
+    width: 100%;
+  }
+
+  .header-navigation-box ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-navigation-box ul li {
+    margin-right: 6rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+    color: var(--color-Dark-Grey);
+    margin-bottom: 0;
+    transition: all 0.3s;
+  }
+
+  .header-navigation-box ul li:hover {
+    color: var(--color-Very-Dark-Blue);
+  }
+
+  .footer {
+    padding: 0;
+    display: flex;
+    align-self: stretch;
+    height: 12rem;
+    position: relative;
+    width: 61.2rem;
+  }
+
+  .footer nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .company-logo-footer {
+    left: 0;
+    top: 0;
+    transform: translateX(0);
+    margin-right: 4rem;
+  }
+
+  .footer nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 31.3rem;
+  }
+
+  .portfolio-footer-button {
+    position: absolute;
+    width: 27rem;
+    left: 84%;
+  }
+
+  .portfolio-footer-button button {
+    padding: 2rem 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    align-self: center;
+  }
 }
