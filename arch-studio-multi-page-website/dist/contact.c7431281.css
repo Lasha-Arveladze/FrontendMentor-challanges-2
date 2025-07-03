@@ -139,6 +139,10 @@
   display: none;
 }
 
+.img-desktop {
+  display: none;
+}
+
 .alert.show {
   animation: none;
   display: block;
@@ -147,6 +151,114 @@
 @keyframes fadeOut {
   to {
     opacity: 0;
+  }
+}
+
+@media (width >= 48rem) {
+  .img-mobile {
+    display: none;
+  }
+
+  .img-tablet {
+    display: block;
+  }
+
+  .section-contact {
+    margin: 20rem 0 22.6rem;
+    padding: 0;
+  }
+
+  .section-contact .divider {
+    display: block;
+  }
+
+  .contact-info-box {
+    justify-content: space-between;
+    align-items: flex-end;
+    display: flex;
+  }
+
+  #map {
+    width: 57.2rem;
+    height: 56rem;
+  }
+
+  .section-map {
+    margin-bottom: 20rem;
+  }
+
+  .section-contact-form-br {
+    display: none;
+  }
+
+  .section-contact-form {
+    padding: 0;
+  }
+
+  .form {
+    margin-bottom: 20rem;
+  }
+}
+
+@media (width >= 90rem) {
+  .img-tablet {
+    display: none;
+  }
+
+  .img-desktop {
+    display: block;
+  }
+
+  .section-hero-textbox {
+    height: 50rem;
+  }
+
+  .section-welcome-text {
+    position: absolute;
+    left: -25%;
+  }
+
+  .section-hero {
+    margin-bottom: 20rem;
+  }
+
+  .section-contact {
+    justify-content: space-between;
+    display: flex;
+  }
+
+  .section-heritage--description {
+    gap: 10rem;
+    margin-top: 7rem;
+    margin-left: 20rem;
+    display: flex;
+  }
+
+  .contact-info-box {
+    flex-direction: column;
+    align-items: flex-start;
+    display: flex;
+  }
+
+  #map {
+    width: 111rem;
+    height: 56rem;
+  }
+
+  .section-contact-form {
+    display: flex;
+  }
+
+  .section-contact-form h3 {
+    margin-right: 13rem;
+  }
+
+  .section-contact-form-br {
+    display: block;
+  }
+
+  .form {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=contact.c7431281.css.map */

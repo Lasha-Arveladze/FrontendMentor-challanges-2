@@ -254,6 +254,18 @@ a {
 }
 
 @media (width >= 48rem) {
+  .img-mobile {
+    display: none;
+  }
+
+  .img-tablet {
+    display: block;
+  }
+
+  .header-hamburger {
+    display: none;
+  }
+
   .heading-l {
     font-size: 9.6rem;
     line-height: 8rem;
@@ -351,6 +363,93 @@ a {
 @media (width >= 1024px) {
   .footer {
     align-self: center;
+  }
+}
+
+@media (width >= 90rem) {
+  body {
+    align-items: flex-start;
+  }
+
+  .container {
+    max-width: 110rem;
+    margin-left: 16.4rem;
+  }
+
+  .header {
+    justify-content: space-between;
+    align-self: flex-start;
+    max-width: 60rem;
+  }
+
+  .header-navigation-box {
+    margin-left: 10rem;
+  }
+
+  .img-tablet {
+    display: none;
+  }
+
+  .img-desktop {
+    width: 100%;
+    height: 72rem;
+    display: block;
+  }
+
+  .swiper-pagination {
+    z-index: 99999;
+    display: flex;
+    position: absolute;
+    overflow: visible;
+    top: 100% !important;
+    left: -8rem !important;
+    transform: translateY(-100%) !important;
+  }
+
+  .swiper-pagination-bullet {
+    color: var(--color-Light-Grey);
+    font-size: 1.8rem;
+    font-weight: bold;
+    opacity: 1 !important;
+    background-color: #fff !important;
+    border: none !important;
+    border-radius: 0 !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 8rem !important;
+    height: 8rem !important;
+    margin: 0 !important;
+    display: flex !important;
+  }
+
+  .swiper-pagination-bullets {
+    bottom: -8rem !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: var(--color-Very-Dark-Blue) !important;
+    color: #fff !important;
+  }
+
+  .swiper-slide .image-text-box {
+    width: 55rem;
+    margin-left: 19rem;
+  }
+
+  .image-container {
+    overflow: visible;
+  }
+
+  .footer {
+    align-self: flex-start;
+    width: 100rem;
+    height: 20rem;
+    margin-left: 16rem;
+  }
+
+  .company-logo-footer {
+    width: 20rem;
+    height: 20rem;
   }
 }
 /*# sourceMappingURL=starter-code.d4c0fbb8.css.map */

@@ -97,6 +97,13 @@
   display: none;
 }
 
+.welcome-img {
+  display: none;
+}
+.desktop-break {
+  display: none;
+}
+
 @media (min-width: 48rem) {
   .label-box {
     display: flex;
@@ -127,14 +134,6 @@
 
   .image-text-box p {
     margin-bottom: 4.1rem;
-  }
-
-  .img-mobile {
-    display: none;
-  }
-
-  .img-tablet {
-    display: block;
   }
 
   .divider {
@@ -198,5 +197,67 @@
     top: 15%;
     opacity: 0.5;
     font-weight: bold;
+  }
+}
+
+@media (min-width: 90rem) {
+  .section-welcome {
+    display: flex;
+    position: relative;
+    margin-bottom: 21rem;
+  }
+
+  .section-welcome-text-box {
+    z-index: 999;
+  }
+
+  .section-welcome-text {
+    font-size: 25rem;
+    letter-spacing: -5px;
+    margin-right: -50%;
+  }
+
+  .section-welcome h3 {
+    margin: 0 auto;
+    margin-bottom: 4.3rem;
+    width: 44.6rem;
+    text-align: left;
+  }
+  .section-welcome--description {
+    width: 44.6rem;
+    margin: 0 auto;
+  }
+
+  .welcome-img {
+    display: block;
+    position: absolute;
+    left: 100%;
+    top: 18%;
+    transform: translateX(-100%);
+  }
+
+  .image-text-box {
+    padding: 0 19rem;
+  }
+  .desktop-break {
+    display: block;
+  }
+
+  .section-featured h3 {
+    margin-bottom: 6.3rem;
+  }
+
+  .section-featured .section-featured-grid {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+  }
+
+  .portfolio .image-container {
+    width: 35rem;
+    height: 56rem;
+  }
+
+  .portfolio .img-desktop {
+    height: auto;
   }
 }
