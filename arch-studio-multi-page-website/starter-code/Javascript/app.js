@@ -25,8 +25,6 @@ const openModal = () => {
   });
 };
 
-console.log(window.innerWidth);
-
 if (window.innerWidth < 768) {
   // Handling burger Functionality
   burgerMenu.addEventListener("click", openModal);
@@ -35,6 +33,4 @@ if (window.innerWidth < 768) {
     slide.addEventListener("click", closeModal);
   });
   window.addEventListener("scroll", closeModal);
-
-  console.log(imgSlider4.src);
 }
